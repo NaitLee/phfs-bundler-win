@@ -5,8 +5,9 @@
 
 1. Download newer version of embeddable python from [here](https://www.python.org/downloads/), extract to folder `python3`.
 2. Download Werkzeug from [here](https://pypi.org/project/Werkzeug/#files), extract the folder `Werkzeug-(version)/src/werkzeug` as `werkzeug`.
-3. Pick a template for HFS 2.4, rename it as `hfs.tpl`, place into this folder.
-4. Create new folder `api-ms`, copy these files from `C:\Windows\System32` (32 bit) or `C:\Windows\SysWOW64` (64 bit) to that folder:
+3. Download WSGIserver from [here](https://pypi.org/project/WSGIserver/#files), extract the file `WSGIserver-(version)/wsgiserver.py` as `wsgiserver.py`.
+4. Pick a template for HFS 2.4, rename it as `hfs.tpl`, place into this folder.
+5. Create new folder `api-ms`, copy these files from `C:\Windows\System32` (32 bit) or `C:\Windows\SysWOW64` (64 bit) to that folder:
 ```
 api-ms-win-core-console-l1-1-0.dll
 api-ms-win-core-datetime-l1-1-0.dll
@@ -75,5 +76,5 @@ api-ms-win-service-management-l2-1-0.dll
 api-ms-win-service-winsvc-l1-1-0.dll
 ucrtbase.dll
 ```
-5. Run `bundle.py` with Python3, input path to cloned [PHFS repo](https://github.com/NaitLee/PHFS) folder, wait for a while, then done 😉
-6. You can run PHFS with `phfs-win\start.bat`, redistribute with `phfs-win.zip`.
+6. Run `bundle.py` with Python3, input path to cloned [PHFS repo](https://github.com/NaitLee/PHFS) folder, wait for a while, then done 😉
+7. You can run PHFS with `phfs-win\start.bat`, redistribute with `phfs-win.zip`.

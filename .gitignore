@@ -4,3 +4,4 @@ werkzeug
 hfs.tpl
 phfs-win
 phfs-win.zip
+wsgiserver.py
