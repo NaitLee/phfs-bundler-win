@@ -18,8 +18,9 @@ if len(sys.argv) < 2:
 else:
     phfs_path = sys.argv[1]
 
-print(' * Delete previously generated version...')
-shutil.rmtree('phfs-win')
+if os.path.exists('phfs-win'):
+    print(' * Delete previously generated version...')
+    shutil.rmtree('phfs-win')
 
 print(' * Create directory phfs-win...')
 os.makedirs('phfs-win')
