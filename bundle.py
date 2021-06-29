@@ -58,8 +58,13 @@ smartcopy('werkzeug', 'phfs-win/phfs')
 print(' * Copy WSGIserver...')
 smartcopy('wsgiserver.py', 'phfs-win/phfs')
 
-print(' * Copy start.bat...')
-smartcopy('start.bat', 'phfs-win')
+print(' * Copy other files...')
+for i in os.listdir('other'):
+    smartcopy('other/%s' % i, 'phfs-win/phfs')
+
+print(' * Copy batch files...')
+for i in os.listdir('bats'):
+    smartcopy('bats/%s' % i, 'phfs-win')
 
 print(' * Create ZIP file...')
 z = zipfile.ZipFile('phfs-win.zip', 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9)
