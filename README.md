@@ -1,5 +1,6 @@
 # phfs-bundler-win
 *Bundler script for PHFS for Windows platform*
+*Now also does this for unix-like platforms*
 
 ## Steps
 
@@ -79,3 +80,12 @@ ucrtbase.dll
 ```
 7. Run `bundle.py` with Python3, input path to cloned [PHFS repo](https://github.com/NaitLee/PHFS) folder, wait for a while, then done 😉
 8. You can run PHFS with `phfs-win\start.bat`, redistribute with `phfs-win.zip`.
+
+## For unix
+For historical reason, needs to generate phfs-win first to continue.
+
+If you dislike Windows things, simply leave related folders empty to generate phfs-win.
+
+After generating phfs-win, run `get-unix.py` then done 😉
+
+You can run PHFS with `phfs-unix\run.py`, redistribute with `phfs-unix.zip`.
