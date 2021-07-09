@@ -1,6 +1,23 @@
 # phfs-bundler-win
+
 *Bundler script for PHFS for Windows platform*
+
 *Now also does this for unix-like platforms*
+
+## What's special?
+
+There are some batch scripts prepared here for PHFS to act like original HFS -- simply drag-drop then files are shared.
+
+Though PHFS (currently) have no GUI, you can drag-drop your file/folder(s) to `start.bat` inside the bundle, then they are shared to `http://localhost:8090/`.
+
+For your LAN/WAN IP address, check online tutorials for getting it.
+
+Exact things happened when drag-drop:
+
+- If what being dropped is a folder, its content will be shared.
+  - That means changes to files inside will be reflected at server side.
+- If it's a file, or many items, they will be copied to a temporary folder and shared.
+  - That means changes to original files will not be reflected at server side.
 
 ## Steps
 
@@ -82,6 +99,7 @@ ucrtbase.dll
 8. You can run PHFS with `phfs-win\start.bat`, redistribute with `phfs-win.zip`.
 
 ## For unix
+
 For historical reason, needs to generate phfs-win first to continue.
 
 If you dislike Windows things, simply leave related folders empty to generate phfs-win.
