@@ -21,6 +21,8 @@ hashLib.py
 helpersLib.py
 hfs.ini
 hfs.tpl
+i18n.ini
+i18nLib.py
 LICENSE
 LICENSE.txt
 mime.ini
